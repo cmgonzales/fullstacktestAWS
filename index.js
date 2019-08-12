@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 //ds
 
-app.use(express.static(path.join(__dirname, '/test/build/')));
+app.use(express.static(path.join(__dirname, '/test/build')));
 
 app.get('/test', (req, res) => {
     let list = ["monkey", "cow", "fufuhead"]
@@ -13,7 +13,7 @@ app.get('/test', (req, res) => {
 })
 
  app.get('*', (req,res) =>{
-	res.sendFile(path.join(__dirname+'/test/build/index.html'));
+	res.sendFile(path.resolve(__dirname, 'test','build','index.html'));
  });
 
 app.listen(port, () => console.log("listening"));
