@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 //ds
 
-app.use(express.static(path.join(__dirname, '/test/build')));
+app.use(express.static(path.join(__dirname, 'test/build')));
 
 app.get('/test', (req, res) => {
     let list = ["monkey", "cow", "fufuhead"]
