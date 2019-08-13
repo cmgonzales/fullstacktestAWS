@@ -12,8 +12,6 @@ app.get('/test', (req, res) => {
  res.send(list)
 })
 
- app.get('/', (req,res) =>{
-	res.sendFile(path.resolve(__dirname, 'test','build','index.html'));
- });
+
 
 app.listen(port, () => console.log("listening"));
