@@ -1,1 +1,1 @@
-fullstack using AWS
+fullstack using AWS cloud
