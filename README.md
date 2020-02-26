@@ -1,1 +1,1 @@
-fullstack using AWS cloud
+testing out aws cloud service
